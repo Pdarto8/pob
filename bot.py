@@ -54,7 +54,7 @@ async def Bot(Client , message):
     step = getfile('step.txt',chatid)
     if text == '/start' or text == 'ðŸ”™':
         setfile('step.txt',chatid)
-        await message.reply_text('ðŸŒ·Welcome to Robot Porn Downloader.\n\nðŸ @python3_channel', quote=True,reply_markup=menu)
+        await message.reply_text('Welcome to Robot Downloader.\n\nðŸ', quote=True,reply_markup=menu)
     if text == 'ðŸ”search video':
         setfile('step.txt',chatid,'s')
         await message.reply_text('ðŸ”Ž Send your **text** to **search video**.\nâš ï¸ **Do not be long **.\n\nðŸ @python3_channel', quote=True,reply_markup=back)
